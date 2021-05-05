@@ -8,11 +8,14 @@
   <body>
     <h1>Instructions on how to use: </h1>
     <h2>1. Input anything into the text box</h2>
-    <h2>2. Click "Get Value" button</h2>
+    <h2>2. Click "Svae/Get Value" button to save the settings and the message</h2>
     <h2>3. Click "Send" button</h2>
     <button onclick="sendMessage()">Send</button>
+    <input type="text" placeholder="Enter webhook name..." id="webhookName">
+    <input type="text" placeholder="Enter webhook URL..." id="webhookURL">
+    <input type="text" placeholder="Enter webhook avatar URL..." id="webhookAvatar">
     <input type="text" placeholder="Type something..." id="myInput">
-    <button type="button" onclick="getInputValue();">Get Value</button>
+    <button type="button" onclick="getInputValue();">Save/Get Value</button>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

@@ -2,16 +2,28 @@ let value = ''
 function getInputValue(){
     value = document.getElementById("myInput").value;
 }
+let whName = ''
+function getWHName(){
+    whName = document.getElementById("webhookName").whName;
+}
+let whURL = ''
+function getWHURL(){
+    whURL = document.getElementById("webhookURL").whURL;
+}
+let whAvatar = ''
+function getWHAvatar(){
+    whAvatar = document.getElementById("webhookAvatar").whAvatar;
+}
 function sendMessage() {
 var request = new XMLHttpRequest();
-request.open("POST", "https://discord.com/api/webhooks/839435542109618186/SOrZdVu9Hk8-qz4FhU2SaOYCnHMl_GDzkyMKtCIW4pIt6UtVY_EW_TLe1KuQtuN0J4t9");
+request.open("POST", whURL);
 
 request.setRequestHeader('Content-type', 'application/json');
 
 var params = 
 {
-username: "memer",
-avatar_url: "",
+username: whName,
+avatar_url: whAvatar,
 content: value
 }
 
