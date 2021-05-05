@@ -6,7 +6,7 @@ let whName = ''
 function getWHName(){
     whName = document.getElementById("webhookName").whName;
 }
-let whURL = ''
+let whURL = webhookURL
 function getWHURL(){
     whURL = document.getElementById("webhookURL").whURL;
 }
