@@ -16,7 +16,7 @@ function getWHAvatar(){
 }
 function sendMessage() {
 var request = new XMLHttpRequest();
-request.open("POST", whURL);
+request.open("POST", webhookURL);
 
 request.setRequestHeader('Content-type', 'application/json');
 
