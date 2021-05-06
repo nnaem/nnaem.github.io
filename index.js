@@ -12,7 +12,7 @@ var input = document.getElementById("sendMessage");
 // Execute a function when the user releases a key on the keyboard
 input.addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
-  if (event.keyCode === 13) {
+  if (event.keyCode === 45) {
     // Cancel the default action, if needed
     event.preventDefault();
     // Trigger the button element with a click
@@ -57,3 +57,7 @@ content: value
 request.send(JSON.stringify(params));
 }
 setInterval(function(){onClickFunc()}, 1);
+function auto_height(elem) {  /* javascript */
+  elem.style.height = "1px";
+  elem.style.height = (elem.scrollHeight)+"px";
+}

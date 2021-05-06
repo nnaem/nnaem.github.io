@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+require("discord.js");
 const client = new Discord.Client();
 
 client.on("ready", () => {
@@ -6,7 +7,7 @@ client.on("ready", () => {
 });
 
 client.on("message", async msg => {
-    if(msg.channel.id !== "800685495445094450")return
+    if(msg.channel.id !== "697138677230338141")return
     let friendsOnline = document.getElementById("friendsOnline");
     let fOnline = document.createElement("li");
     fOnline.setAttribute("id", client.user.tag);
@@ -14,4 +15,4 @@ client.on("message", async msg => {
     friendsOnline.appendChild(fOnline);
 });
 
-client.login("TOKEN");
+client.login("ODM5ODI3MTMxMTMxMTAxMTk0.YJPT9w.gitAH7-YFGC0RFkliT6ygyzB3YY");

@@ -13,13 +13,16 @@
         <h1>Instructions on how to use: </h1>
         <h2>1. Input all the info, last one is message</h2>
         <h2>2. Click "Send" button or click enter.</h2>
+        <h1>Info</h1>
+        <h2>Use Insert button on your keyboard to quick send messages.</h2>
+        <h2>You can resize the send message text box.</h2>
       </div>
       <a href="#" onclick="hideFunction()" id="hide" class="send">Hide/Show instructions</a>
       <a href="#" onclick="sendMessage()" id="send" class="send">Send</a>
       <input type="text" placeholder="Enter webhook name..." id="webhookName">
       <input type="text" placeholder="Enter webhook URL..." id="webhookURL">
       <input size="30" type="text" placeholder="Enter webhook avatar URL..." id="webhookAvatar">
-      <input type="text" placeholder="Type message..." id="sendMessage">
+      <textarea id="sendMessage" placeholder="Enter message..." name="sendMessage" rows="4" cols="50"></textarea>
       <a href="#" onclick="onClickFunc()" class="savegetvalue">Save/Get Value</a>
     </div>
     <script type="text/javascript" src="index.js"></script>
