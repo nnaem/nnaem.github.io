@@ -1,3 +1,11 @@
+function hideFunction() {
+    var x = document.getElementById("instructions");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 let value = ''
 function getInputValue(){
     value = document.getElementById("myInput").value;

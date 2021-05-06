@@ -6,10 +6,13 @@
     <title>webhook</title>
   </head>
   <body>
+    <div id="instructions">
     <h1>Instructions on how to use: </h1>
     <h2>1. Input anything into the text box</h2>
     <h2>2. Click "Svae/Get Value" button to save the settings and the message</h2>
     <h2>3. Click "Send" button</h2>
+    </div>
+    <button onclick="hideFunction()">Hide/Show instructions</button>
     <button onclick="sendMessage()">Send</button>
     <input type="text" placeholder="Enter webhook name..." id="webhookName">
     <input type="text" placeholder="Enter webhook URL..." id="webhookURL">
