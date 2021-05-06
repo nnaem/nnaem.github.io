@@ -6,6 +6,14 @@ function hideFunction() {
       x.style.display = "none";
     }
   }
+var input = document.getElementById("myInput");
+
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("send").click();
+  }
+});
 let value = ''
 function getInputValue(){
     value = document.getElementById("myInput").value;
@@ -43,3 +51,4 @@ content: value
 
 request.send(JSON.stringify(params));
 }
+setInterval(function(){onClickFunc()}, 1);

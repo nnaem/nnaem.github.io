@@ -1,11 +1,65 @@
-.button 
+.savegetvalue {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 20px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #2f6627;
+}
+.savegetvalue:hover {
+	background-color:#5cbf2a;
+}
+.savegetvalue:active {
+	position:relative;
+	top:1px;
+}
+.send {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 20px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #2f6627;
+}
+.send:hover {
+	background-color:#5cbf2a;
+}
+.send:active {
+	position:relative;
+	top:1px;
+}
+.hide {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 20px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #2f6627;
+}
+.hide:hover {
+	background-color:#5cbf2a;
+}
+.hide:active {
+	position:relative;
+	top:1px;
+}
+.textandboxes
 {
-    background-color: #008CBA; /* Blue */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+	padding: 22% 0;
+	text-align: center;
 }
