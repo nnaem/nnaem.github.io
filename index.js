@@ -6,13 +6,6 @@ function hideFunction() {
       x.style.display = "none";
     }
   }
-  var input = document.getElementById("messageBox");
-  input.addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
-      addItem();
-    }
-  });
 let value = ''
 function getInputValue(){
     value = document.getElementById("sendMessage").value;
