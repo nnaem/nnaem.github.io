@@ -6,10 +6,6 @@ let whName = ''
 function getWHName(){
     whName = document.getElementById("webhookName").whName;
 }
-let whURL = webhookURL
-function getWHURL(){
-    whURL = document.getElementById("webhookURL").whURL;
-}
 let whAvatar = ''
 function getWHAvatar(){
     whAvatar = document.getElementById("webhookAvatar").whAvatar;
