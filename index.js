@@ -9,6 +9,7 @@ function hideFunction() {
   var input = document.getElementById("messageBox");
   input.addEventListener("keyup", function(event) {
     event.preventDefault();
+    event.currentTarget.value = "";
     if (event.keyCode === 13) {
       addItem();
     }
