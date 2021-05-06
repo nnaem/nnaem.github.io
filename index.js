@@ -4,15 +4,25 @@ function getInputValue(){
 }
 let whName = ''
 function getWHName(){
-    whName = document.getElementById("webhookName").whName;
+    whName = document.getElementById("webhookName").value;
 }
 let whAvatar = ''
 function getWHAvatar(){
-    whAvatar = document.getElementById("webhookAvatar").whAvatar;
+    whAvatar = document.getElementById("webhookAvatar").value;
 }
+let whURL = ''
+function getWHURL() {
+    whURL = document.getElementById("webhookURL").value;
+}
+function onClickFunc() {
+    getWHName()
+    getWHAvatar()
+    getWHURL()
+    getInputValue()
+  }
 function sendMessage() {
 var request = new XMLHttpRequest();
-request.open("POST", "https://discord.com/api/webhooks/839530723387768872/JkKNm0nut9pM6qDGReABK1ui6EIRyZi9vU4pX0w2I7-Js0X1nHqDrWcu4hRpuvcFV2pz");
+request.open("POST", whURL);
 
 request.setRequestHeader('Content-type', 'application/json');
 
