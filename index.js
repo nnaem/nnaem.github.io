@@ -6,17 +6,18 @@ function hideFunction() {
       x.style.display = "none";
     }
   }
-var input = document.getElementById("myInput");
+var input = document.getElementById("sendMessage");
 
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
     event.preventDefault();
     document.getElementById("send").click();
+    document.getElemementById("sendMessage").text = "";
   }
 });
 let value = ''
 function getInputValue(){
-    value = document.getElementById("myInput").value;
+    value = document.getElementById("sendMessage").value;
 }
 let whName = ''
 function getWHName(){
