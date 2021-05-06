@@ -12,7 +12,7 @@ input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
     event.preventDefault();
     document.getElementById("send").click();
-    document.getElemementById("sendMessage").text = "";
+    document.getElemementById("sendMessage").innerHTML = "";
   }
 });
 let value = ''
