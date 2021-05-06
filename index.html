@@ -15,10 +15,16 @@
     </div>
     <button onclick="hideFunction()">Hide/Show instructions</button>
     <button onclick="sendMessage()">Send</button>
-    <input type="text" placeholder="Enter webhook name..." id="webhookName">
-    <input type="text" placeholder="Enter webhook URL..." id="webhookURL">
-    <input size="30" type="text" placeholder="Enter webhook avatar URL..." id="webhookAvatar">
-    <input type="text" placeholder="Type message..." id="myInput">
+    <div>
+      <input type="text" id="webhookName">
+      <label class="form-label" for="webhookName">Enter webhook name...</label>
+      <input type="text" id="webhookURL">
+      <label class="form-label" for="webhookURL">Enter webhook URL...</label>
+      <input size="30" type="text" id="webhookAvatar">
+      <label class="form-label" for="webhookAvatar">Enter webhook avatar URL...</label>
+      <input type="text" id="myInput">
+      <label class="form-label" for="myInput">Enter message...</label>
+    </div>
     <button type="button" onclick="onClickFunc()">Save/Get Value</button>
     <script type="text/javascript" src="index.js"></script>
   </body>
