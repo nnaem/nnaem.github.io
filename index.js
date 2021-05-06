@@ -6,15 +6,23 @@ function hideFunction() {
       x.style.display = "none";
     }
   }
-var input = document.getElementById("sendMessage");
-
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("send").click();
-    document.getElemementById("sendMessage").innerHTML = "";
+  function addItem() {
+    var ul = document.getElementById("dynamic-list");
+    var candidate = document.getElementById("sendMessage");
+    var li = document.createElement("li");
+    li.setAttribute('id', candidate.value);
+    li.appendChild(document.createTextNode(candidate.value));
+    ul.appendChild(li);
+    document.getElementById('messageBox').value = "";
   }
-});
+  var input = document.getElementById("messageBox");
+  input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+      addItem();
+    }
+  
+  });
 let value = ''
 function getInputValue(){
     value = document.getElementById("sendMessage").value;
