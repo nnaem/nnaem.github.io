@@ -14,4 +14,4 @@ client.on("message", async msg => {
     friendsOnline.appendChild(fOnline);
 });
 
-client.login("ODM5ODI3MTMxMTMxMTAxMTk0.YJPT9w.DaPuPbJhm4tKFtl6v6zhVbkNRtY");
+client.login("TOKEN");
