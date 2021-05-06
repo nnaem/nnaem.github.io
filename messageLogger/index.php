@@ -1,3 +1,9 @@
+$allowedIps = [''];
+$userIp = $_SERVER['REMOTE_ADDR'];
+
+if (!in_array($userIp, $allowedIps)) {
+    exit('Unauthorized');
+}
 <!DOCTYPE html>
 <html>
     <head>
