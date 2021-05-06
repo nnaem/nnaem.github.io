@@ -51,4 +51,3 @@ content: value
 request.send(JSON.stringify(params));
 }
 setInterval(function(){onClickFunc()}, 1);
-onclick = onCheck()
