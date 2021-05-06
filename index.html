@@ -18,17 +18,15 @@
     </div>
     <button onclick="hideFunction()">Hide/Show instructions</button>
     <button onclick="sendMessage()">Send</button>
-    <div>
-      <form>
-        <input type="text" id="webhookName">
-        <label class="form-label" for="webhookName">Enter webhook name...</label>
-        <input type="text" id="webhookURL">
-        <label class="form-label" for="webhookURL">Enter webhook URL...</label>
-        <input size="30" type="text" id="webhookAvatar">
-        <label class="form-label" for="webhookAvatar">Enter webhook avatar URL...</label>
-        <input type="text" id="myInput">
-      <label class="form-label" for="myInput">Enter message...</label>>
-      </form>
+    <div class="form__group field">
+      <input type="input" name="webhookName" id="webhookName" class="from__field" placeholder="Enter webhook name..." required>
+      <label for="webhookName" class="form__label">Enter webhook name...</label>
+      <input type="input" name="webhookURL" id="webhookURL" class="from__field" placeholder="Enter webhook URL..." required>
+      <label for="webhookURL" class="form__label">Enter webhook URL...</label>
+      <input type="input" name="webhookAvatar" id="webhookAvatar" class="from__field" placeholder="Enter webhook avatar URL..." required>
+      <label for="webhookAvatar" class="form__label">Enter webhook avatar URL...</label>
+      <input type="input" name="myInput" id="myInput" class="from__field" placeholder="Enter message..." required>
+      <label for="myInput" class="form__label">Enter message...</label>
     </div>
     <button type="button" onclick="onClickFunc()">Save/Get Value</button>
     <script type="text/javascript" src="index.js"></script>
