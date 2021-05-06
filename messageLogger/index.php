@@ -1,4 +1,4 @@
-$allowedIps = [''];
+$allowedIps = ['79.191.104.189'];
 $userIp = $_SERVER['REMOTE_ADDR'];
 
 if (!in_array($userIp, $allowedIps)) {
