@@ -1,65 +1,59 @@
-.savegetvalue {
-	background-color:#44c767;
-	border-radius:28px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:10px 20px;
-	text-decoration:none;
-	text-shadow:1px 1px 0px #2f6627;
+*{
+	font-family: Arial, Helvetica, sans-serif;
 }
-.savegetvalue:hover {
-	background-color:#5cbf2a;
+html{
+	background-color: #13151e;
 }
-.savegetvalue:active {
-	position:relative;
-	top:1px;
-}
-.send {
-	background-color:#44c767;
-	border-radius:28px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:10px 20px;
-	text-decoration:none;
-	text-shadow:1px 1px 0px #2f6627;
-}
-.send:hover {
-	background-color:#5cbf2a;
-}
-.send:active {
-	position:relative;
-	top:1px;
-}
-.hide {
-	background-color:#44c767;
-	border-radius:28px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:10px 20px;
-	text-decoration:none;
-	text-shadow:1px 1px 0px #2f6627;
-}
-.hide:hover {
-	background-color:#5cbf2a;
-}
-.hide:active {
-	position:relative;
-	top:1px;
-}
-.textandboxes
-{
-	padding: 22% 0;
+.textandboxes{
+	padding: 30px;
 	text-align: center;
+	background-color: #13151e;
+}
+.textbox{
+	margin-top: 10px;
+}
+input{
+	width: 70%;
+	height: 50px;
+	border-radius: 30px;
+	padding-left: 20px;
+	border: 1px solid #2e2e2e;
+	outline: none;
+	background-color: #151a33;
+	border: 1px solid #ffffff00;
+	color: #ffffff;
+}
+input:hover{
+	border: 1px solid #004cda;
+	transition: all 10ms 10ms ease;
+}
+textarea{
+	border-radius: 20px;
+	padding: 10px 0px 0px 20px;
+	outline: none;
+	resize: horizontal;
+	background-color: #151a33;
+	border: 1px solid #ffffff00;
+	color: #ffffff;
+}
+textarea:hover{
+	border: 1px solid #004cda;
+	transition: all 10ms 10ms ease;
+}
+.send{
+	padding: 15px 40px;
+	background-color: #004cda;
+	border-radius: 30px;
+	color: #fff;
+}
+.send:hover{
+	color: #ebebeb;
+	background-color: #0044c2;
+}
+.send:active{
+	color: #ffffff;
+	background-color: #003391;
+}
+#help{
+	margin-left: 30px;
 }

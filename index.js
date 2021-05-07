@@ -61,3 +61,21 @@ function auto_height(elem) {  /* javascript */
   elem.style.height = "1px";
   elem.style.height = (elem.scrollHeight)+"px";
 }
+$("textarea").keydown(function(e){
+  // Enter was pressed without shift key
+  if (e.key == 'Enter' && !e.shiftKey)
+  {
+      // prevent default behavior
+      e.preventDefault();
+  }
+});
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("send").click();
+  }
+}); 
