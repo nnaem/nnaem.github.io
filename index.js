@@ -62,10 +62,10 @@ function auto_height(elem) {  /* javascript */
   elem.style.height = (elem.scrollHeight)+"px";
 }
 $("textarea").keydown(function(e){
-  // Enter was pressed without shift key
-  if (e.key == 'Enter' && !e.shiftKey)
+  // Enter pressed
+  if (e.keyCode == 13)
   {
-      // prevent default behavior
+      //method to prevent from default behaviour
       e.preventDefault();
   }
 });
@@ -78,4 +78,8 @@ input.addEventListener("keyup", function(event) {
     // Trigger the button element with a click
     document.getElementById("send").click();
   }
-}); 
+});
+if (keyCode == 13)
+{
+  
+}
