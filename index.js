@@ -79,7 +79,3 @@ input.addEventListener("keyup", function(event) {
     document.getElementById("send").click();
   }
 });
-if (keyCode == 13)
-{
-  
-}

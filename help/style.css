@@ -1,3 +1,11 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
 html{
 	background-color: #13151e;
+}
+.inf
+{
+	text-align: center;
 }
