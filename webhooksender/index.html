@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet">
+    <title>Discord Webhook Sender</title>
+  </head>
+  <body>
+    <div class="textandboxes">
+      <input type="text" placeholder="Enter webhook name..." id="webhookName" class="textbox"><br>
+      <input type="text" placeholder="Enter webhook URL..." id="webhookURL" class="textbox"><br>
+      <input size="30" type="text" placeholder="Enter webhook avatar URL..." id="webhookAvatar" class="textbox"><br>
+      <textarea id="sendMessage" maxlength="5000" placeholder="Enter message..." name="sendMessage" rows="4" cols="100" class="textbox"></textarea><br><br>
+      <a href="#" onclick="sendMessage()" id="send" class="send">Send</a>
+      <a href="https://nnaem.github.io/help" id="help">Help</a>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
