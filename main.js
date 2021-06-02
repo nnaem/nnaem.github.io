@@ -1,3 +1,6 @@
+$(window).load(function() {
+    $('.overlay').delay(1000).fadeOut(800);
+});
 function clock()
 {
     var time = new Date();

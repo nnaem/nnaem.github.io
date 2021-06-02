@@ -1,3 +1,13 @@
+function dead() {
+  swal({
+      title: `You have ate ${totalFoodAte} food by travelling ${totalDistanceTravelled} blocks.`,
+      icon: "success",
+      button: "Okay",
+    });
+} 
+$(window).load(function() {
+  $('.overlay').delay(1000).fadeOut(800);
+});
 // GAME_PIXEL_COUNT is the pixels on horizontal or vertical axis of the game board (SQUARE).
 const GAME_PIXEL_COUNT = 40;
 const SQUARE_OF_GAME_PIXEL_COUNT = Math.pow(GAME_PIXEL_COUNT, 2);
@@ -116,11 +126,16 @@ const moveSnake = () => {
     // Stop moving the snake
     clearInterval(moveSnakeInterval);
     if (
-      !alert(
-        `You have ate ${totalFoodAte} food by travelling ${totalDistanceTravelled} blocks.`
-      )
+      swal({
+        title: `You have ate ${totalFoodAte} food by travelling ${totalDistanceTravelled} blocks.`,
+        icon: "info",
+        button: "Retry",
+      })
+      .then((reloadpage) => {
+        window.location.reload();
+      })
     )
-      window.location.reload();
+    setTimeout(function(){ window.location.reload(); }, 10000)
   }
 
   nextSnakeHeadPixel.classList.add("snakeBodyPixel");
