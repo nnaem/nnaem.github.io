@@ -22,5 +22,5 @@ window.mobileCheck = function() {
     return check;
   };
 if (check == true) {
-    document.getElementsById('clockPos').style.top = "10%";
+    document.getElementsByClassName('clockPos').style.top = "10%";
 }
