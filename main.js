@@ -17,5 +17,5 @@ function clock()
     setTimeout("clock()", 1000)
 }
 if (typeof screen.orientation !== 'undefined') {
-    document.getElementsById('clockPos').style = "top: 10%";
+    document.getElementsById('clockPos').style.top = "10%";
 }
