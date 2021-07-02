@@ -1,0 +1,29 @@
+.center {   
+    font-size: 50px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+body, html {
+    background-color: black;
+    color: black;
+}
+.centerbutactuallynot {
+    font-size: 50px;
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    color: blueviolet;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+* {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
